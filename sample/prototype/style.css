@@ -1,0 +1,22 @@
+/* test style sheet*/
+h2{
+    clear: both;
+    margin: 0 0 20px;
+    padding: 5px 0 3px;
+    font-size: 18px;
+    line-height: 18px;
+    color: blue;
+
+    /* line */
+    padding-left: 10px;
+    border-left: 6px solid #5ca3c5;
+    border-bottom: 1px solid #5ca3c5;
+}
+
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
