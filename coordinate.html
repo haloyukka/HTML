@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>「画素操作」のサンプル</title>
+    </head>
+    <body>
+        <canvas id="cnvs" width=256 height=256></canvas>
+        <script type="text/javascript">
+            var cnvs = document.getElementById("cnvs");
+            var ctx = cnvs.getContext("2d");
+
+            // 全体を塗りつぶし
+            ctx.fillStyle = "#ffff8f";
+            ctx.fillRect(0, 0, 256, 256);
+
+            // 原点（x=0, y=0）から横幅100、高さ200の矩形を描く
+            ctx.strokeStyle = "black";
+            ctx.strokeRect(0, 0, 100, 200);
+
+            // x=60, y=25から横幅100、高さ200の矩形を描く
+            ctx.strokeStyle = "red";
+            ctx.strokeRect(60, 25, 100, 200);
+
+            // x=120, y=50から横幅100、高さ200の矩形を描く
+            ctx.strokeStyle = "blue";
+            ctx.strokeRect(120, 50, 100, 200);
+        </script>
+        <input type="button" value="To Image" onClick="
+            var imgUrl = cnvs.toDataURL();
+            window.open(imgUrl, '_blank');
+        ">
+    </body>
+</html>
