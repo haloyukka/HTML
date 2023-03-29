@@ -1,0 +1,6 @@
+/* コンテナの設定（ブロックレベル） */
+.container {
+    display: grid;
+    /* display: inline-grid; */
+  }
+
